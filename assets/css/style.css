@@ -1,41 +1,43 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+
+/* HEADER / NAV BAR STYLES START */
+
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
-  display: inline;
 }
 
 header a {
   text-decoration: none;
-  color: #fce138
+  color: #fce138;
 }
 
 header nav {
-  float: right;
   margin: 7px 0;
 }
 
 header nav ul li {
-  display: inline
+  display: inline;
 }
 
 header nav ul li a {
@@ -44,10 +46,15 @@ header nav ul li a {
   font-size: 22px;
 }
 
+/* HEADER / NAVBAR STYLES END */
+
+
+
+/* FOOTER STYLES START */
 footer {
   background: #fce138;
-  width: 100%;
   padding: 40px 35px;
+  width: 100%;
 }
 
 footer h2 {
@@ -57,7 +64,7 @@ footer h2 {
   margin: 0;
 }
 
-footer div{
+footer div {
   float: right;
   line-height: 1.5;
   text-align: right;
@@ -66,35 +73,37 @@ footer div{
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
+/* HERO STYLES START */
 .hero {
-  background-image: url(../images/hero-bg.jpeg);
-  height: 600px;
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
+  height: 600px;
 }
 
 .hero-form {
+  border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
   width: 500px;
   color: #024e76;
-  border: solid 3px #024e76;
   position: absolute;
   bottom: 120px;
   right: 140px;
 }
 
-section div h3 {
+.hero-form h3 {
   font-size: 24px;
-  margin: 0px;
+  margin: 0;
 }
-
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -106,11 +115,11 @@ section div h3 {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
-  margin: 0 5px
+  margin: 0 5px;
 }
 
 .hero-form button {
@@ -119,32 +128,18 @@ section div h3 {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-}
+} 
+/* HERO STYLES END */
 
-.intro {
-  text-align: center;
-}
 
-.intro p {
-  line-height: 1.7;
-  color: #39a6b2;
-  width: 80%;
-  font-size: 20px;
-  margin: 0 auto;
-}
-
-.steps {
-  text-align: center;
-  background: #fce138;
-}
-
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
   display: inline-block;
+  padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
+  margin-bottom: 35px;
+  color: #024e76;
 }
 
 .primary-border {
@@ -154,6 +149,28 @@ section div h3 {
 .secondary-border {
   border-color: #39a6b2;
 }
+/* SECTION TITLE STYLES END */
+
+/* WHAT WE DO STYLES */
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+/* WHAT YOU DO STYLES END */
+
+
+/* WHAT YOU DO STYLES START */
+.steps { 
+  text-align: center;
+  background: #fce138;
+}
 
 .steps div {
   margin-bottom: 80px;
@@ -162,7 +179,7 @@ section div h3 {
 .steps img {
   width: 15%;
   margin: 10px 0;
-}
+} 
 
 .steps h3 {
   color: #024e76;
@@ -170,15 +187,17 @@ section div h3 {
   margin-top: 10px;
 }
 
-.steps p {
-  color: #39a6b2;
-  font-size: 23px;
-}
-
 .steps span {
   font-size: 38px;
 }
 
+.steps p {
+  color: #39a6b2;
+  font-size: 23px;
+}
+/* WHAT YOU DO STYLES END */
+
+/* MEET THE TRAINERS START */
 .trainers {
   text-align: center;
 }
@@ -197,17 +216,9 @@ section div h3 {
 }
 
 .trainer-bio {
-padding: 35px;
-float: left;
-width: 65%;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
+  padding: 35px;
+  float: left;
+  width: 65%;
 }
 
 .trainer-bio h3 {
@@ -225,10 +236,12 @@ width: 65%;
   font-size: 17px;
   line-height: 1.3;
 }
+/* TRAINER STYLES END */
 
+/* REACH OUT STYLES START */
 .contact {
-  background: #024e76;
   text-align: center;
+  background: #024e76;
 }
 
 .contact h2 {
@@ -237,11 +250,11 @@ width: 65%;
 
 .contact-info iframe {
   width: 400px;
-  height: 400px;
+height: 400px;
 }
 
-.contact-info div{
-  width: 400px;
+.contact-info div {
+  width: 410px;
   display: inline-block;
   vertical-align: top;
   text-align: left;
@@ -263,4 +276,16 @@ width: 65%;
 
 .contact-info a {
   color: #fce138;
+}
+
+
+/* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
