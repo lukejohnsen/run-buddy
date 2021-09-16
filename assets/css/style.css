@@ -58,10 +58,10 @@ header nav ul li a {
 footer {
   background: #fce138;
   padding: 40px 35px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 footer h2 {
@@ -181,7 +181,7 @@ section {
   font-size: 20px;
   text-align: center;
 }
-/* WHAT WE DO STYLES END */
+/* WHAT YOU DO STYLES END */
 
 
 /* WHAT YOU DO STYLES START */
@@ -206,21 +206,6 @@ section {
   flex: 1 30%;
 }
 
-.step-text {
-  flex: 12;
-}
-
-.step-text p {
-  color: #39a6b2;
-  font-size: 18px;
-}
-
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: #024e76;
-}
-
 .step-info {
   flex: 2 70%;
   display: flex;
@@ -237,10 +222,24 @@ section {
   max-width: 100%;
 }
 
+.step-text {
+  flex: 12;
+}
+
+.step-text p {
+  color: #39a6b2;
+  font-size: 18px;
+}
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
+
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
-
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -251,9 +250,9 @@ section {
 
 .trainer {
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
 }
 
 .trainer img {
@@ -295,8 +294,13 @@ section {
   flex-wrap: wrap;
 }
 
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
-height: 400px;
+  height: 400px;
 }
 
 .contact-info div {
@@ -313,15 +317,6 @@ height: 400px;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
-}
-
-.contact-info a {
-  color: #fce138;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
 }
 
 .contact-form input, .contact-form textarea {
@@ -343,6 +338,10 @@ height: 400px;
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+}
+
+.contact-info a {
+  color: #fce138;
 }
 
 
